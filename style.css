@@ -273,12 +273,11 @@ main {
         border-radius: 0.7rem;
         border: none;
         cursor: pointer;
-        background: #0070F3;
+        background: var(--cyan);
         color: var(--gray12);
     }
 
     .banco_btn:hover {
-        background: #0070F3;
         scale: 0.98;
         opacity: 0.85;
         transition: 50ms ease;
@@ -440,6 +439,26 @@ main {
         color: var(--gray1);
     }
 
+    .kids-table thead tr {
+        background: linear-gradient(#ec098c, #f55a86);
+        color: #fff;
+    }
+
+    .social-table thead tr {
+        background: var(--gray3);
+    }
+
+    .ing-table {
+        border: 1px solid #fff;
+    }
+
+    .ing-table thead tr {
+        background: var(--gray1);
+    }
+
+    .salud-table thead tr {
+        background: var(--gray7);
+    }
 
 
 
