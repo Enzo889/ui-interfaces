@@ -267,228 +267,318 @@ main {
         font-size: 13px;
     }
 
-    .banco_btn {
-        margin-left: 0.5rem;
-        padding-inline: 1.5rem;
-        border-radius: 0.7rem;
-        border: none;
-        cursor: pointer;
-        background: var(--cyan);
+}
+
+/* button */
+
+.banco_btn {
+    margin-left: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    cursor: pointer;
+    background: var(--cyan);
+    color: var(--gray12);
+}
+
+.banco_btn:hover {
+    scale: 0.98;
+    opacity: 0.85;
+    transition: 50ms ease;
+}
+
+.kids_btn {
+    margin-left: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    display: inline-flex;
+    gap: 0.35rem;
+    cursor: pointer;
+    background: linear-gradient(#ec098c, #f55a86);
+    color: var(--gray12);
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.kids_btn:hover {
+    scale: 1.03;
+    transition: 50ms ease;
+}
+
+.social_btn {
+    margin-left: 0.5rem;
+    padding: 0.2rem 1.5rem;
+    border-radius: 0.7rem;
+    border: 1px solid;
+    cursor: pointer;
+    background: transparent;
+    color: var(--gray12);
+}
+
+
+.ing_btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 0.5px solid;
+    cursor: pointer;
+    background: var(--gray1);
+    color: var(--gray12);
+}
+
+.ing_btn:active {
+    background: var(--gray12);
+    color: var(--gray1);
+    transition: all 50ms ease;
+}
+
+
+.salud_btn {
+    margin-left: 0.5rem;
+    padding-inline: 1.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 0.35rem;
+    background: transparent;
+    color: var(--gray12);
+
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.salud_btn:hover {
+    background: #0070F3;
+    border: 1px solid;
+    transition: all 50ms ease;
+}
+
+/* select */
+.content-select {
+    display: inline-flex;
+    position: relative;
+}
+
+
+.content-select select {
+    width: 100%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+
+}
+
+.banco-select select {
+    border-radius: 0.7rem;
+    padding-inline: 1.5rem;
+}
+
+.kids-select select {
+    border-radius: 0.7rem;
+    padding-inline: 1.5rem;
+    background: linear-gradient(#ec098c, #f55a86);
+    color: var(--gray12);
+}
+
+.kids-select select option {
+    background: var(--gray1);
+    color: var(--gray12);
+}
+
+.social-select select {
+    border-radius: 0.7rem;
+    padding: 0.2rem 1.5rem;
+    border: 1px solid;
+    cursor: pointer;
+    background: transparent;
+    color: var(--gray12);
+}
+
+.social-select select option {
+    background: var(--gray1);
+    color: var(--gray12);
+}
+
+.ing-select select {
+    padding: 0.5rem 1rem;
+    border: 0.5px solid;
+    cursor: pointer;
+    background: var(--gray1);
+    color: var(--gray12);
+}
+
+.ing-select select:focus {
+    background: var(--gray12);
+    color: var(--gray1);
+    transition: all 50ms ease;
+}
+
+/* table */
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: var(--cyan);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--gray1);
+    background: var(--gray12);
+    color: var(--gray1);
+}
+
+.kids-table thead tr {
+    background: linear-gradient(#ec098c, #f55a86);
+    color: #fff;
+}
+
+.social-table thead tr {
+    background: var(--gray3);
+}
+
+.ing-table {
+    border: 1px solid #fff;
+}
+
+.ing-table thead tr {
+    background: var(--gray1);
+}
+
+.salud-table thead tr {
+    background: var(--gray7);
+}
+
+/* cuadro de texto */
+
+.banco-text {
+    margin: 1rem 0;
+    background: var(--gray1);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    text-align: center;
+
+    span {
+        font-size: 1.35rem;
+        font: bold;
         color: var(--gray12);
     }
+}
 
-    .banco_btn:hover {
-        scale: 0.98;
-        opacity: 0.85;
-        transition: 50ms ease;
-    }
+.kids-text {
+    margin: 1rem 0;
+    background: linear-gradient(#ec098c, #f55a86);
+    padding: 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: #fff !important;
+}
 
-    .kids_btn {
-        margin-left: 0.5rem;
-        padding-inline: 1.5rem;
-        border-radius: 0.7rem;
-        border: none;
-        display: inline-flex;
-        gap: 0.35rem;
-        cursor: pointer;
-        background: linear-gradient(#ec098c, #f55a86);
-        color: var(--gray12);
+.social-text {
+    margin: 1rem 0;
+    background: var(--gray3);
+    padding: 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--gray11);
 
-        svg {
-            width: 16px;
-            height: 16px;
+    span {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+        text-transform: uppercase;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+
+        span:nth-child(1) {
+            background: var(--gray12);
+            padding: 0.7rem;
+            color: var(--gray1);
+            border-radius: 1rem;
+            cursor: pointer;
         }
-    }
 
-    .kids_btn:hover {
-        scale: 1.03;
-        transition: 50ms ease;
-    }
-
-    .social_btn {
-        margin-left: 0.5rem;
-        padding: 0.2rem 1.5rem;
-        border-radius: 0.7rem;
-        border: 1px solid;
-        cursor: pointer;
-        background: transparent;
-        color: var(--gray12);
-    }
-
-
-    .ing_btn {
-        margin-left: 0.5rem;
-        padding: 0.5rem 1rem;
-        border: 0.5px solid;
-        cursor: pointer;
-        background: var(--gray1);
-        color: var(--gray12);
-    }
-
-    .ing_btn:active {
-        background: var(--gray12);
-        color: var(--gray1);
-        transition: all 50ms ease;
-    }
-
-
-    .salud_btn {
-        margin-left: 0.5rem;
-        padding-inline: 1.5rem;
-        border: 1px solid transparent;
-        cursor: pointer;
-        display: inline-flex;
-        gap: 0.35rem;
-        background: transparent;
-        color: var(--gray12);
-
-
-        svg {
-            width: 16px;
-            height: 16px;
+        span:nth-child(1):hover {
+            opacity: 0.85;
+            transition: all 150ms ease;
         }
-    }
 
-    .salud_btn:hover {
-        background: #0070F3;
-        border: 1px solid;
-        transition: all 50ms ease;
-    }
+        span:nth-child(2) {
+            background: transparent;
+            padding: 0.7rem;
+            color: var(--gray12);
+            border-radius: 1rem;
+            cursor: pointer;
+        }
 
-    .content-select {
-        display: inline-flex;
-        position: relative;
-    }
-
-    /* select */
-
-    .content-select select {
-        width: 100%;
-        cursor: pointer;
-        margin-left: 0.5rem;
+        span:nth-child(2):hover {
+            background: var(--gray1);
+            transition: all 150ms ease;
+        }
 
     }
+}
 
-    .banco-select select {
-        border-radius: 0.7rem;
-        padding-inline: 1.5rem;
-    }
+.ing-text {
+    margin: 1rem 0;
+    background: var(--gray1);
+    padding: 1.5rem;
+    border: 1px solid var(--gray12);
+    text-align: center;
+    color: var(--gray12);
+}
 
-    .kids-select select {
-        border-radius: 0.7rem;
-        padding-inline: 1.5rem;
-        background: linear-gradient(#ec098c, #f55a86);
-        color: var(--gray12);
-    }
-
-    .kids-select select option {
-        background: var(--gray1);
-        color: var(--gray12);
-    }
-
-    .social-select select {
-        border-radius: 0.7rem;
-        padding: 0.2rem 1.5rem;
-        border: 1px solid;
-        cursor: pointer;
-        background: transparent;
-        color: var(--gray12);
-    }
-
-    .social-select select option {
-        background: var(--gray1);
-        color: var(--gray12);
-    }
-
-    .ing-select select {
-        padding: 0.5rem 1rem;
-        border: 0.5px solid;
-        cursor: pointer;
-        background: var(--gray1);
-        color: var(--gray12);
-    }
-
-    .ing-select select:focus {
-        background: var(--gray12);
-        color: var(--gray1);
-        transition: all 50ms ease;
-    }
-
-    .styled-table {
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        min-width: 400px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .styled-table thead tr {
-        background-color: var(--cyan);
-        color: #ffffff;
-        text-align: left;
-    }
-
-    .styled-table th,
-    .styled-table td {
-        padding: 12px 15px;
-    }
-
-    .styled-table tbody tr {
-        border-bottom: 1px solid var(--gray1);
-        background: var(--gray12);
-        color: var(--gray1);
-    }
-
-    .kids-table thead tr {
-        background: linear-gradient(#ec098c, #f55a86);
-        color: #fff;
-    }
-
-    .social-table thead tr {
-        background: var(--gray3);
-    }
-
-    .ing-table {
-        border: 1px solid #fff;
-    }
-
-    .ing-table thead tr {
-        background: var(--gray1);
-    }
-
-    .salud-table thead tr {
-        background: var(--gray7);
-    }
+.salud-text {
+    margin: 1rem 0;
+    background: var(--gray7);
+    padding: 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--gray12);
+}
 
 
 
 
 
+.footnotes {
+    border-top: 1px solid var(--gray4);
+    padding-top: 24px;
+    margin-top: 24px;
 
+    ol {
+        margin: 0;
+        padding-left: 12px;
 
+        li {
+            font-size: 15px;
+            color: var(--gray11);
+            font-weight: 400;
+            margin-top: 8px;
 
-    .footnotes {
-        border-top: 1px solid var(--gray4);
-        padding-top: 24px;
-        margin-top: 24px;
+            a[data-footnote-backref] {
+                display: none;
+            }
 
-        ol {
-            margin: 0;
-            padding-left: 12px;
-
-            li {
-                font-size: 15px;
-                color: var(--gray11);
-                font-weight: 400;
-                margin-top: 8px;
-
-                a[data-footnote-backref] {
-                    display: none;
-                }
-
-                &::marker {
-                    font-variant-numeric: initial;
-                }
+            &::marker {
+                font-variant-numeric: initial;
             }
         }
     }
