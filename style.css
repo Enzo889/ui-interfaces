@@ -418,7 +418,7 @@ main {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    width: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -725,5 +725,9 @@ img {
     main {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .styled-table {
+        width: 100%;
     }
 }
