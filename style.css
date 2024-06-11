@@ -446,6 +446,7 @@ main {
 
 .social-table thead tr {
     background: var(--gray3);
+    color: var(--gray12);
 }
 
 .ing-table {
@@ -454,10 +455,12 @@ main {
 
 .ing-table thead tr {
     background: var(--gray1);
+    color: var(--gray12);
 }
 
 .salud-table thead tr {
     background: var(--gray7);
+    color: var(--gray12);
 }
 
 /* cuadro de texto */
